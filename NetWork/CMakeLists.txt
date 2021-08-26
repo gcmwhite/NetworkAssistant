@@ -11,8 +11,10 @@ find_package(Qt5 COMPONENTS Core Network REQUIRED)
 
 add_library(${PROJECT_NAME} SHARED
     DllGlobal.hxx
-    AbstractNetwork.hxx
-    AbstractNetwork.cxx
+    AbstractSocket.hxx
+    AbstractSocket.cxx
+    UdpSocket.hxx
+    UdpSocket.cxx
 )
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE NETWORK_LIBRARY)
